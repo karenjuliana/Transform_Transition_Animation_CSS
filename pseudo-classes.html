@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        /* Enlace no visitado  */
+        a:link {
+            color: hotpink;
+        }
+
+        /* Para link visitado */
+        a:visited {
+            color: tomato;
+        }
+
+        /* Para cuando se pase el mouse por encima */
+        a:hover {
+            background-color: aqua;
+        }
+
+        /* Para cuando no tengan esta clase o id  */
+        p:not(.maravillas) {
+            color: blue;
+        }
+
+        /* Para seleccionar el primer hijo del div container  */
+        .container div:nth-child(1) {
+            background-color: darkcyan;
+
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/"> Alicio</a>
+    <p>en el </p>
+    <p class="maravillas">país</p>
+    <!-- p*2#hola.perro -->
+    <div class="container">
+        <div>
+            Alicio
+        </div>
+        <div>
+            Alicie
+        </div>
+        <div>
+            Alicix
+        </div>
+    </div>
+
+</body>
+
+</html>

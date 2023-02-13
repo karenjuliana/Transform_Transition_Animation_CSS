@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        /* Colocar antes del txt un contenido */
+        div::before {
+            content: ":-*";
+        }
+
+        /* Colocar despues del txt un contenido */
+        div::after {
+            content: ":p";
+        }
+        /* Para cuando esté deshabilitado un elemento  */
+        input:disabled{
+            background-color: red;
+        }
+        /* Para cuando se hace click o se mantiene presionado sobre un elemento */
+        input:active{
+            background-color: rgb(22, 158, 44);
+        }
+           /* Para cuando se está parado sobre un elemento */
+           input:focus{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div> Mi amo Te amo</div>
+    <input type="date" name="" id="" disabled>
+    <input type="text">
+</body>
+
+</html>
